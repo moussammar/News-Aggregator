@@ -1,0 +1,225 @@
+:root{
+    --white : #FAFAFA;
+    --navy: #2C3E50;
+    --charcoal:  #2C3E50;
+    --light-charcoal: #476481;
+    --red: rgb(164, 22, 22);
+    --blue: rgb(33, 89, 154);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--white);
+    color: var(--charcoal);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--navy);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav{
+    background-color: var(--navy);
+    top: 0;
+    width: 100%;
+    padding-top: 0.4%;
+    padding-bottom: 0.4%;
+    padding-left: 0;
+    padding-right: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+nav ul{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    
+}
+nav ul li{
+    list-style-type: none ;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+header nav a {
+    color: white;
+    margin-right: 1.4em;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+header nav a:hover {
+    color: var(--red);  
+}
+
+
+#logo{
+    width: 5.4%;
+    height: 5.4%;
+    margin-left: 3%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#preloader{
+    position:fixed;
+    z-index:100;
+    width: 100vw;
+    height: 100vh;
+    background-image:url("assets/preloader.gif") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+#scroll_title{
+    margin-top: 3em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.posts_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.post_wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 1em;
+    padding: 1em;
+    background-color: var(--light-charcoal);
+    color: white;
+    border-radius: 15px;
+    border: 2px solid var(--navy);
+}
+
+.post_img{
+    width: 36vw;
+    height: 100%;
+    border: 2px ridge white;
+    border-radius: 15px;
+    background-color: var(--charcoal);
+}
+
+.post_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.6em;
+    color: white;
+    font-size: 1.2em;
+    margin-left: 1.8em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.publishedAt{
+    opacity: 0.6;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: var(--navy);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.4em;
+}
+
+
+
+@media only screen and (max-width: 450px){
+    body{
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        width: 100vw;
+        padding-left: 6px;
+        padding-right: 6px;
+        justify-content: flex-start;
+    }
+    header nav a{
+        font-size: 8px;
+        margin-left: 14px;
+        margin-right: 2px;
+    }
+    #logo{
+        width: 30px;
+        height: 30px;
+        margin-right: 2px;
+    }
+
+    #scroll_title{
+        margin-top: 2em;
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 16px ;
+    }
+    .posts_wrapper{
+        margin-left: 0;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    
+    .post_wrapper{
+        flex-direction: column;
+        justify-content: space-between;
+        width: 90vw;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0.8em;
+        padding: 0.6em;
+        border: 2px solid var(--navy);
+    }
+    
+    .post_img{
+        width: 100%;
+        height: 40vh;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+    }
+    
+    .post_text{
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0.8em;
+        font-size: 12px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0.8em;
+        margin-top: 0.8em;
+    }
+    
+    footer {
+        width: 100vw;
+    }
+    footer p{
+        font-size: 12px;
+        line-height: 18px;
+        margin-right: 4px;
+        margin-left: 4px;
+    }
+}

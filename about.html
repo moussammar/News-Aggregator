@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Aggregator</title>
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    <div id="preloader"></div>
+    <header>
+      <nav id="nav" class="align">
+        <img id="logo" src="assets/logo.png" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="scroll.html">Scroll Now</a></li>
+          <li><a href="news.html">News Finder</a></li>
+          <li><a href="around.html">Around You</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="align_about_items">
+        <div>
+          <h2 id="about_title">Who We Are</h2>
+        <p id="about_txt">
+          Welcome to our news platform! Our mission is simple: to keep you
+          informed, engaged, and connected to the world around you. We believe
+          in delivering accurate, timely, and relevant news from trusted
+          sources, empowering you with the information you need to navigate
+          today's fast-paced world. Whether you're looking for breaking news,
+          trending topics, or insightful stories, we strive to provide content
+          that resonates with your interests. Our goal is to be your go-to
+          resource for all things news, keeping you ahead of the curve and
+          always in the know.
+        </p>
+        </div>
+        <img id="about_img" src="assets/about.webp" alt="NewsRoom">
+      </div>
+
+      <div class="contact_container">
+        <form action="https://formspree.io/f/mkgolllr" method="POST">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          /><br /><br />
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            cols="40"
+            placeholder="Your Message"
+            required
+          ></textarea
+          ><br /><br />
+          <div class="align_button">
+            <button id="send_button" type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2025 News Aggregator | <a href="https://github.com/moussammar/News-Arrgregator/blob/master/README.md" target="_blank">ReadMe</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

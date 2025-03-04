@@ -1,0 +1,342 @@
+:root{
+    --white : #FAFAFA;
+    --navy: #2C3E50;
+    --charcoal:  #2C3E50;
+    --light-charcoal: #476481;
+    --red: rgb(164, 22, 22);
+    --blue: rgb(33, 89, 154);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--white);
+    color: var(--charcoal);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--navy);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav{
+    background-color: var(--navy);
+    top: 0;
+    width: 100%;
+    padding-top: 0.4%;
+    padding-bottom: 0.4%;
+    padding-left: 0;
+    padding-right: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+nav ul{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    
+}
+nav ul li{
+    list-style-type: none ;
+    margin-bottom: 0;
+}
+
+header nav a {
+    color: white;
+    margin-right: 1.4em;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+header nav a:hover {
+    color: var(--red);  
+}
+
+
+#logo{
+    width: 5.4%;
+    height: 5.4%;
+    margin-left: 3%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#preloader{
+    position:fixed;
+    z-index:100;
+    width: 100vw;
+    height: 100vh;
+    background-image:url("assets/preloader.gif") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.hero_sec{
+    position: absolute;
+    top: 46%;
+    left: 8%;
+}
+
+#intro_title{
+    color: white;
+    text-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px black, 0 0 20px black;
+    font-style: inherit;
+    font-size: 3em;
+    margin-bottom: 0.6em;
+    width: 70%;
+}
+
+#news{
+    color: white;
+    font-style: inherit;
+    text-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px black, 0 0 20px black;
+    background-color:  transparent;
+    text-decoration: none;
+    padding: 0.18em;
+    padding-left: 20px;
+    padding-right: 20px ;
+    border: 1.6px solid white;
+    border-radius: 25px;
+    font-size: 2em;
+    margin-left: 5px;
+}
+
+#news:hover{
+    background-color: var(--charcoal);
+    opacity: 0.9;
+}
+
+.video_container{
+    position: relative;
+    margin: 0;
+}
+
+#hero_vid{
+   width: 100%;
+   background-color: black;
+   opacity: 0.9;
+   pointer-events: none;
+   border-bottom: 3px ridge var(--charcoal);
+}
+
+.align{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+/*Animation*/
+@keyframes backInLeft {
+    0% {
+      transform: translateX(-1000px);
+      opacity: 0;
+    }
+    60% {
+      transform: translateX(30px);
+      opacity: 1;
+    }
+    80% {
+      transform: translateX(-10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Apply the animation to the element */
+.back_in_left{
+    display: inline-block;
+    animation: backInLeft 1.8s ease-out forwards;
+  }
+
+.home_text{
+    font-style: inherit;
+    font-size: 1.6em;
+    line-height: 1.3em;
+    margin: 2.2em;
+    margin-top: 4em;
+    display: flex;
+    justify-content: space-between;
+}
+#text{
+    margin-top: 1em;
+    margin-right: 2em;
+    width: 50vw;
+}
+#map{
+    width: 50vw;
+    height: 80vh;
+    border-radius: 15px;
+}
+#paragraph_title{
+    text-align: center;
+}
+
+.align_images{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 3.6em;
+    margin-right: 3.6em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8em;
+}
+
+.image img{
+    border-radius: 50%;
+    width: 18em;
+    height: 18em;
+    border-width: 2px;
+    border-color: var(--navy);
+    border-style: ridge;
+}
+
+.image a{
+    color: var(--charcoal);
+    font-style: inherit;
+    background-color:  transparent;
+    text-decoration: none;
+    padding: 0.18em;
+    padding-left: 18px;
+    padding-right: 18px ;
+    border: 1.5px solid var(--charcoal);
+    border-radius: 25px;
+    font-size: 1.8em;
+    margin-left: 5px;
+}
+
+.image a:hover{
+    color: white;
+    background-color: var(--navy);
+    opacity: 0.9;
+}
+
+
+footer {
+    margin-top: 20px;
+    background-color: var(--navy);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.4em;
+}
+
+
+
+@media only screen and (max-width: 450px){
+    body{
+        width: 100vw;
+    }
+    nav{
+        width: 100vw;
+        padding-left: 6px;
+        padding-right: 6px;
+        justify-content: flex-start;
+    }
+    header nav a{
+        font-size: 8px;
+        margin-left: 14px;
+        margin-right: 2px;
+    }
+    #logo{
+        width: 30px;
+        height: 30px;
+        margin-right: 2px;
+    }
+    .hero_sec{
+        top: 15%;
+    }
+    #intro_title{
+        font-size: 15px;
+        margin-bottom: 3px;
+        width: 60%;
+    }
+    #news{
+        padding: 5px;
+        padding-left: 6px;
+        padding-right: 6px ;
+        border: 0.6px solid white;
+        border-radius: 25px;
+        font-size: 10px;
+        margin-left: 2%;
+    }
+    .home_text{
+        font-size: 14px;
+        line-height: 1.3em;
+        margin: 1.4em;
+        margin-top: 2em;
+        justify-content:flex-start;
+    }
+    #text{
+        width: 90vw;
+        margin: 0;
+        margin-top: 1em;
+    }
+    #map{
+        width: 0vw;
+        height: 0vh;
+        display: none;
+    }
+
+    .align_images{
+        margin-left: 0.6em;
+        margin-right: 0.6em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    
+    .image{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.3em;
+    }
+    
+    .image img{
+        border-radius: 50%;
+        width: 5em;
+        height: 5em;
+        border-width: 1px;
+    }
+    
+    .image a{
+        padding: 2px;
+        padding-left: 3px;
+        padding-right: 3px ;
+        border: 0.6px solid var(--charcoal);
+        border-radius: 25px;
+        font-size: 10px;
+        margin-left: 0px;
+    }
+
+    footer {
+        width: 100vw;
+    }
+    footer p{
+        font-size: 12px;
+        line-height: 18px;
+        margin-right: 4px;
+        margin-left: 4px;
+    }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Aggregator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="preloader"></div>
+    <header>
+      <nav id="nav" class="align">
+        <img id="logo" src="assets/logo.png" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="scroll.html">Scroll Now</a></li>
+          <li><a href="news.html">News Finder</a></li>
+          <li><a href="around.html">Around You</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="video_conatainer">
+        <video id="hero_vid" autoplay loop muted controls poster="assets/intro.png">
+          <source src="assets/hero_sec.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="hero_sec">
+        <div class="back_in_left">
+          <h1 id="intro_title">Bringing You the World's Stories</h1>
+          <a id="news" href="news.html"
+            >Explore the Latest
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="0.8em"
+              fill="currentColor"
+              class="bi bi-arrow-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+              /></svg></a>
+        </div>
+      </div>
+
+      <div class="home_text">
+        <div>
+          <h2 id="paragraph_title">News Aggregator</h2>
+          <p id="text">
+            In a fast-moving world, staying informed is the key to staying
+            ahead. Our platform is designed to keep you connected to the most
+            important stories, from breaking news to in-depth reports. No matter
+            where you are, we're here to bring the latest headlines, global
+            events, and trending topics directly to you. With every story, we
+            aim to inspire thought, ignite curiosity, and keep you updated on
+            the things that matter most. Dive in, explore, and let us guide you
+            through a world of knowledge, ensuring you never miss out on what's
+            happening around you.
+          </p>
+        </div>
+        <img
+          id="map"
+          src="https://img.freepik.com/free-vector/digital-world-map_1017-8011.jpg"
+          alt="world map"
+        />
+      </div>
+
+      <div class="align_images">
+        <div class="image">
+          <img src="assets/scroll.webp" alt="scroll">
+          <a class="btns" href="scroll.html">Dive In <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="0.8em"
+            height="0.8em"
+            fill="currentColor"
+            class="bi bi-arrow-right"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+            /></svg></a>
+        </div>
+        <div class="image">
+          <img src="assets/inline_image_preview.jpg" alt="search">
+          <a class="btns" href="news.html">Explore <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="0.8em"
+            height="0.8em"
+            fill="currentColor"
+            class="bi bi-arrow-right"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+            /></svg></a>
+        </div>
+            <div class="image">
+              <img src="assets/about.avif" alt="about">
+              <a class="btns" href="about.html">Our Story <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="0.8em"
+                height="0.8em"
+                fill="currentColor"
+                class="bi bi-arrow-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                /></svg></a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 News Aggregator | <a href="https://github.com/moussammar/News-Arrgregator/blob/master/README.md" target="_blank">ReadMe</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
