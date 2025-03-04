@@ -206,6 +206,13 @@ footer p {
     font-size: 1.4em;
 }
 
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    color: var(--red);
+}
 
 
 @media only screen and (max-width: 450px){
