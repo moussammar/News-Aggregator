@@ -215,6 +215,8 @@ footer a:hover{
 }
 
 
+/* responsive */
+
 @media only screen and (max-width: 450px){
     body{
         width: 100vw;

@@ -7,6 +7,8 @@ function hide_preloader(){
 
 
 //scrolling
+
+//endpoints
 let sort_by = "publishedAt";
 let language = "en";
 let subjects = ['sports','politics','technology','art','science','weather','football','movies','food','wars'];
@@ -20,6 +22,7 @@ const news = {
         .then((data)=>this.display_news(data))
     },
     display_news : function(data){
+        //creating elements
         let i = Math.floor(Math.random() * 95)
         const posts_wrapper = document.querySelector('.posts_wrapper');
         const post_wrapper = document.createElement('div')

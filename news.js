@@ -5,7 +5,9 @@ function hide_preloader(){
     document.getElementById("nav").style.position="fixed";
 }
 
+//daily_news
 
+//endpoints
 let sort_by = "publishedAt";
 let language = "en";
 let topics = ['football','phones','cars','politics'];
@@ -18,12 +20,12 @@ const daily_news = {
         .then((info)=>this.display_daily(info))
     }, 
     display_daily : function(info){
-         const daily_news_wrapper = document.querySelector('.daily_news');
-         const first_post = document.getElementById('first_post');
-         const second_post = document.getElementById('second_post');
-         const third_post = document.getElementById('third_post');
-         const fourth_post = document.getElementById('fourth_post');
-
+        //creating elements
+        const daily_news_wrapper = document.querySelector('.daily_news');
+        const first_post = document.getElementById('first_post');
+        const second_post = document.getElementById('second_post');
+        const third_post = document.getElementById('third_post');
+        const fourth_post = document.getElementById('fourth_post');
         const daily_post_wrapper = document.createElement('div');
         daily_post_wrapper.classList.add('dailypost_wrapper');
         const daily_img_wrapper = document.createElement('div');
@@ -43,7 +45,6 @@ const daily_news = {
         const publishedAt = document.createElement('p');
         publishedAt.innerText = "Published At : "+info.articles[0].publishedAt;
         publishedAt.classList.add('publishedAt');
-
         //appending
         daily_news_wrapper.appendChild(daily_post_wrapper);
         daily_post_wrapper.appendChild(daily_img_wrapper);
@@ -61,6 +62,8 @@ for (let topic = 0 ; topic<topics.length; topic++){
     daily_news.fetch_daily_news(topics[topic]);
 }
 //////////////////////////////////////////////
+
+//searched news
 
 const searched_news = {
     api_key :"5845f0e0005141c9a6626b736ab3660e",
@@ -112,6 +115,8 @@ const searched_news = {
 
 }
 }
+
+//taking input
 
 let search_input = document.getElementById('search_box');
 let search_btn = document.getElementById('search_btn');

@@ -22,11 +22,14 @@ city_name.addEventListener("change", () => {
   location.reload();
 });
 
+//news around you
+
+//endpoints
+
 let sort_by = "publishedAt";
 let language = "en";
 
 const ar_news = {
-//   api_key: "333f8d25ff6f480f8c9279e2aacd4be1",
   api_key: "9b772c4950154e2f911c8673540e1926",
   fetch_ar_news: function (topic) {
     fetch("https://newsapi.org/v2/everything?q="+topic+"&sortBy="+sort_by+"&language="+language +"&apiKey="+this.api_key)
@@ -76,6 +79,8 @@ const ar_news = {
     }
   },
 };
+
+// weather
 
 const weather = {
     api_key : "f8a6f3b18054d8f7c529799fa324f85d",

@@ -154,7 +154,7 @@ footer a:hover{
     color: var(--red);
 }
 
-
+/* responsive */
 
 @media only screen and (max-width: 450px){
     body{
